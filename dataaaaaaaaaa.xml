@@ -3,82 +3,42 @@
 <ModulePrefs title="Effing Worms Xmas" />
 <Content type="html"><![CDATA[
 
-<!doctype html>
-<html lang="en">
-<html>
+
+<!DOCTYPE html>
+<html lang="en-us">
 <head>
-<title>WAFLASH</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/AndreajnRcm4/b398dl2h74v@9a23fbb2373d743a564873251cbb57736ebc1f73/style.css" type="text/css">
-<script>
-        var gameConfig = {
-            swfUrl: "https://cdn.jsdelivr.net/gh/google-yandex/slupp2@main/mustescapethewizardscastle.swf"        
-        }
-</script>
-</head>
-<body>
-<div id="waflashContainer">
-<canvas class="waflashCanvas" id="canvas" tabindex="1"></canvas>
-<div id="waflashStatus" style="display: none;">Playing...</div>
-<script>
-        var ua = navigator.userAgent.toLowerCase();
-        if ( (navigator.appName =='Netscape' && ua.indexOf('trident') != -1) || (ua.indexOf("msie") != -1)) {
-            var waf = document.getElementById('waflashStatus');
-            waf.style.display ='block';
-            waf.innerText ='??? ?????(IE) ??? ??? ???? ???? !\n??, ???? ?? ????? ??????.';
-            gtag('event', 'connect_from_ie', {'event_category': 'error', 'event_label': ua });
-        }
-    </script>
-<script type="module" crossorigin="anonymous">
-        let is_mobile = /Mobi/i.test(window.navigator.userAgent);
-        if (is_mobile) {
-            function scrollToSubject() {
-                try {
-                    window.scrollTo({
-                        top: 100,
-                        left: 0,
-                        behavior: 'smooth'
-                    });
-                } catch (e) {}
-            }
-            scrollToSubject();
-            window.addEventListener("orientationchange", function() {
-                setTimeout(scrollToSubject, 100);
-            });
-        } else {
-            document.getElementById('canvas').focus();
-        }
-        document.getElementById('canvas').addEventListener("keydown", function(ev) {
-            ev.preventDefault();
-            ev.stopPropagation();
-        });
-        document.getElementById('canvas').addEventListener("click", function() {
-            document.getElementById('canvas').focus();
-        });
-        document.addEventListener("mousedown", (function() {
-            const canvasElement = document.getElementById('canvas');
-            let focused = false;
-            return function(ev) {
-                if (ev.target == canvasElement) {
-                    if (!focused) {
-                        canvasElement.focus();
-                        focused = true;
-                    }
-                } else {
-                    if (focused) {
-                        focused = false;
-                    }
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Electron Dash Unblocked</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/classroom-google-coms/s@main/style2.css">
+    <script src="https://cdn.jsdelivr.net/gh/classroom-google-coms/s@main/dummy.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/classroom-google-coms/s@main/unity-mod.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/classroom-google-coms/s@main/UnityProgress.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/classroom-google-coms/s@main/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate(
+        "gameContainer",
+        "https://cdn.jsdelivr.net/gh/classroom-google-coms/s@main/ElectronDash.json",
+        {
+            onProgress: UnityProgress,Module:{
+                onRuntimeInitialized: function() {
+                    UnityProgress(gameInstance, "complete")
                 }
-                return true;
             }
-        })());
-        import {
-            createWaflash
-        } from 'https://cdn.jsdelivr.net/gh/AndreajnRcm4/b398dl2h74v@9a23fbb2373d743a564873251cbb57736ebc1f73/js/waflash-player.min.js';
-        createWaflash(gameConfig.swfUrl, window.wafOptions || {});
+        });
     </script>
-</div>
+</head>
+<body style="overflow:hidden; margin:0; padding:0;">
+    <div id="gameView" class="webgl-content" style="position: absolute; width: 100%; height: 100%; margin: 0px; padding:0px;">
+        <div id="gameContainer" style="width: 100%; height: 100%; margin: 0px; padding:0px;"></div>
+    </div>
 </body>
 </html>
+<div class="floating" id="moreg" style="position:fixed; top: 30%; left: 0px; z-index: 10"><a target="_blank" href="https://sites.google.com/view/games-unblockedd/" title="unblocked games premium "><img
+            src="MoreGames.png" width="180" height="90"
+            style="cursor:pointer;" alt="More Games"></a></div>
+
 
 ]]></Content>
 </Module>
