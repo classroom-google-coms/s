@@ -1,59 +1,35 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 <head>
-<title>Electron Dash</title>
-<link rel="icon" type="image/x-icon" href="media/graphics/misc/favicon.ico" />
-<meta http-equiv="Content-type" content="text/html; charset=utf-8">
-
-
-<meta name="viewport" content="initial-scale=1.0001, minimum-scale=1.0001, maximum-scale=1.0001, user-scalable=no, minimal-ui" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<link rel="stylesheet" type="text/css" href="game.css">
-<script type="e838b595c2fecde46e140633-text/javascript" src="game.js"></script>
-<script type="e838b595c2fecde46e140633-text/javascript">
-		window.splashBackground = "#333399";
-	</script>
-
-<style type="text/css">
-		.button {
-	font-size:1em;
-	font-weight:normal;
-	margin: 10px;
-    
-	padding:0.5em 1em;
-	text-decoration:none;   
-   	 
-	color:#ffffff;  
-    
-	background-color:#f0841f;
-    
-	font-family:"spartan-mb-regular";
-	font-weight: bold;
-    
-}.button:hover {    
-	background-color:#da7208;    
-	text-decoration:none !important;    
-    
-}.button:active {
-	position:relative;
-	top:0.05em;
-}
-	</style>
-
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Electron Dash Unblocked</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="style2.css">
+    <script src="dummy.js"></script>
+    <script src="unity-mod.js"></script>
+    <script src="UnityProgress.js"></script>
+    <script src="UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate(
+        "gameContainer",
+        "ElectronDash.json",
+        {
+            onProgress: UnityProgress,Module:{
+                onRuntimeInitialized: function() {
+                    UnityProgress(gameInstance, "complete")
+                }
+            }
+        });
+    </script>
 </head>
-<script src="rocket-loader.min.js" data-cf-settings="e838b595c2fecde46e140633-|49"></script><body onload="setTimeout(function(){window.scrollTo(0,1)},1);">
-
-<div id="ajaxbar">
-<div id="game"><canvas id="canvas"></canvas></div>
-<div id="webgl"><canvas id="webglcanvas"></canvas></div>
-<div id="orientate">
-
-</div>
-<div id="play" class="play" onclick="if (!window.__cfRLUnblockHandlers) return false; " data-cf-modified-e838b595c2fecde46e140633-></div>
-
-</div>
-
-
-
-<script src="rocket-loader.min.js" data-cf-settings="e838b595c2fecde46e140633-|49" defer></script></body>
+<body style="overflow:hidden; margin:0; padding:0;">
+    <div id="gameView" class="webgl-content" style="position: absolute; width: 100%; height: 100%; margin: 0px; padding:0px;">
+        <div id="gameContainer" style="width: 100%; height: 100%; margin: 0px; padding:0px;"></div>
+    </div>
+</body>
 </html>
+<div class="floating" id="moreg" style="position:fixed; top: 30%; left: 0px; z-index: 10"><a target="_blank" href="https://sites.google.com/view/unblockedgame/unblocked-games-wtf" title="unblocked games wtf "><img
+            src="MoreGames.png" width="180" height="90"
+            style="cursor:pointer;" alt="More Games"></a></div>
